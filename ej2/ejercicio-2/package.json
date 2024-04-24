@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "logplease": "^1.2.15"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
