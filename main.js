@@ -16,8 +16,8 @@ const fs = require("fs");
 http
   .createServer((req, res) => {
     const q = url.parse(req.url, true);
-    const filename = "." + q.pathname + ".html";
-   
+    const filename = "./pages/" + q.pathname;
+    console.log(q);
       fs.readFile(filename, (err, data) => {
         if (err) {
           res.writeHead(404, { "Content-Type": "text/html" });
